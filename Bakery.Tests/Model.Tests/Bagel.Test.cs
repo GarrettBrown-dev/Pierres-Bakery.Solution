@@ -26,7 +26,7 @@ namespace Bakery.Tests
             Assert.AreEqual(2, Pastry.PastryPrice(1));
         }
         [TestMethod]
-        public void BagelPrice_ShowPriceFor4Bagels_5()
+        public void BagelPrice_ShowPriceFor4Bagels_4()
         {
             Assert.AreEqual(4, Bagel.BagelPrice(4));
         }
