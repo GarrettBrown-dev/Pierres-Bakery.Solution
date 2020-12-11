@@ -6,12 +6,12 @@ namespace Bakery.Models
     {
         public int Price { get; set; }
         public int Quant { get; set; }
-        public string Type { get; set; }
-        public Bread(int price, int quant, string type)
+
+        public Bread(int price, int quant)
         {
             Price = price;
             Quant = quant;
-            Type = type;
+
         }
         public static int BreadPrice(int quant)
         {
