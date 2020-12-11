@@ -7,9 +7,9 @@ namespace Bakery.Models
         public int Price { get; set; }
         public int Quant { get; set; }
 
-        public Pastry(int price, int quant)
+        public Pastry(int proce, int quant)
         {
-            Price = price;
+            Price = proce;
             Quant = quant;
         }
         public static int PastryPrice(int quant)

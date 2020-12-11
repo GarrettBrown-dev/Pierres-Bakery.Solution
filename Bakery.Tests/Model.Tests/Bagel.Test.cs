@@ -13,5 +13,12 @@ namespace Bakery.Tests
             Bagel newBagel = new Bagel(0, 0);
             Assert.AreEqual(typeof(Bagel), newBagel.GetType());
         }
+        [TestMethod]
+        public void SetObject_SetObject_Bagel()
+        {
+            int quant = 0;
+            int price = 0;
+            Bagel newBagel = new Bagel(quant, price);
+        }
     }
 }
