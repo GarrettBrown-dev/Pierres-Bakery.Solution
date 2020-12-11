@@ -20,5 +20,10 @@ namespace Bakery.Tests
             int price = 0;
             Bagel newBagel = new Bagel(quant, price);
         }
+        [TestMethod]
+        public void BagelPrice_ShowPriceForSingleBagel_Price()
+        {
+            Assert.AreEqual(1, Pastry.PastryPrice(1));
+        }
     }
 }
