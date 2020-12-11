@@ -39,7 +39,7 @@ namespace Bakery.Tests
             newBread.Price = updatedPrice;
             int finalPr = newBread.Price;
 
-            Assert.AreEqual(updatedQuan, finalQu);
+            Assert.AreEqual(updatedQuant, finalQu);
             Assert.AreEqual(updatedPrice, finalPr);
         }
     }
