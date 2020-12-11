@@ -36,8 +36,16 @@ namespace Pierre
                 }
                 else if (userInputSecond == "no") ;
             }
+            Console.WriteLine("Anything else for you? If so type yes! If not, type 'done'!");
+            string userInputFinal = Console.ReadLine().ToLower();
+            if (userInputFinal == "yes")
+            {
+                Main();
+            }
         }
+
     }
+}
 
 
 
