@@ -16,7 +16,7 @@ namespace Bakery.Tests
         [TestMethod]
         public void SetObject_SetObject_Pastry()
         {
-            int quant = 1;
+            int quant = 0;
             int price = 0;
             Pastry newPastry = new Pastry(quant, price);
         }
