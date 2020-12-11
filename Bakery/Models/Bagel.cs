@@ -14,7 +14,7 @@ namespace Bakery.Models
         {
             int newQuant = quant % 4;
             int total = newQuant * 2;
-            if (quant > 4)
+            if (quant >= 4)
             {
                 int deal = quant / 4;
                 total += deal * 4;

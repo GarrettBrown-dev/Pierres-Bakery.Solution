@@ -1,5 +1,3 @@
-using System;
-
 namespace Bakery.Models
 {
     public class Pastry
@@ -7,9 +5,9 @@ namespace Bakery.Models
         public int Price { get; set; }
         public int Quant { get; set; }
 
-        public Pastry(int proce, int quant)
+        public Pastry(int price, int quant)
         {
-            Price = proce;
+            Price = price;
             Quant = quant;
         }
         public static int PastryPrice(int quant)
