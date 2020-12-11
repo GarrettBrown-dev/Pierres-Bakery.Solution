@@ -7,7 +7,6 @@ namespace Bakery.Tests
 
     public class PastryTest
     {
-        [TestMethod]
 
     }
 }
