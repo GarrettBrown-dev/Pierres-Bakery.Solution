@@ -42,11 +42,17 @@ namespace Pierre
             {
                 Main();
             }
+            else if (userInputFinal == "done")
+            {
+                int total = bread.Price + pastry.Price;
+                Console.WriteLine("Fantastique! Your total is: $" + total);
+                Console.WriteLine("Thank you for visiting mon ami! Please come again, and aou revuare!");
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid value!");
+            }
         }
 
     }
-}
-
-
-
 }
