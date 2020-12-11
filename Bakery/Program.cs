@@ -23,6 +23,19 @@ namespace Pierre
                 }
                 else if (userInputFirst == "no") ;
             }
+            Console.WriteLine("Wonderful! Would you like any Pastries today? (Yes/No)");
+            string userInputSecond = Console.ReadLine();
+            {
+                if (userInputSecond == "yes")
+                {
+                    Console.WriteLine("Here are the details for pastries: 1 pastry: $2, but if one buys 3, you can get them for a total of 5$! This is to your liking, non? Go on! Enter a value!");
+                    string userInputPastry = Console.ReadLine();
+                    pastry.Quant += int.Parse(userInputPastry);
+                    pastry.Price = Pastry.PastryPrice(pastry.Quant);
+                    Console.WriteLine("Excellent! The total for these delicious pastries is $" + pastry.Price);
+                }
+                else if (userInputSecond == "no") ;
+            }
         }
     }
 
