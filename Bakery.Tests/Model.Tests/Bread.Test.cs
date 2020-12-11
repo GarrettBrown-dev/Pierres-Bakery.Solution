@@ -25,5 +25,22 @@ namespace Bakery.Tests
         {
             Assert.AreEqual(10, Bread.BreadPrice(3));
         }
+        [TestMethod]
+        public void SetObject_SetObject_Bread()
+        {
+            int quant = 0;
+            int price = 0;
+            Bread newBread = new Bread(quant, price);
+
+            int updatedQuant = 2;
+            newBread.Quant = updatedQuant;
+            int finalQu = newBread.Quant;
+            int updatedPrice = 2;
+            newBread.Price = updatedPrice;
+            int finalPr = newBread.Price;
+
+            Assert.AreEqual(updatedQuan, finalQu);
+            Assert.AreEqual(updatedPrice, finalPr);
+        }
     }
 }
