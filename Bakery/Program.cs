@@ -9,6 +9,7 @@ namespace Pierre
         {
             Bread bread = new Bread(0, 0);
             Pastry pastry = new Pastry(0, 0);
+            Bagel bagel = new Bagel(0, 0);
 
             Console.WriteLine("Bonjour! Welcome to Pierre's Bakery! What would you like today mon ami? Can I start you off with some bread? (Please enter yes or no!)");
             string userInputFirst = Console.ReadLine().ToLower();
@@ -24,7 +25,7 @@ namespace Pierre
                 else if (userInputFirst == "no") ;
             }
             Console.WriteLine("Wonderful! Would you like any Pastries today? (Yes/No)");
-            string userInputSecond = Console.ReadLine();
+            string userInputSecond = Console.ReadLine().ToLower();
             {
                 if (userInputSecond == "yes")
                 {
@@ -35,6 +36,19 @@ namespace Pierre
                     Console.WriteLine("Excellent! The total for these delicious pastries is $" + pastry.Price);
                 }
                 else if (userInputSecond == "no") ;
+            }
+            Console.WriteLine("Tres Bon! And finally would you like some bagels? Our newest special is 4 for $4! (Yes/No)");
+            string userInputThird = Console.ReadLine().ToLower();
+            {
+                if (userInputThird == "yes")
+                {
+                    Console.WriteLine("Excellent choice mon friar! How many would you like? Our newest deal is 4 for $4!");
+                    string userInputBagel = Console.ReadLine();
+                    bagel.Quant += int.Parse(userInputBagel);
+                    bagel.Price = Bagel.BagelPrice(bagel.Quant);
+                    Console.WriteLine("Ahhh magnifique! Your total for these fresh bagels will be $" + bagel.Price);
+                }
+                else if (userInputThird == "no") ;
             }
             Console.WriteLine("Anything else for you? If so type yes! If not, type 'done'!");
             string userInputFinal = Console.ReadLine().ToLower();
