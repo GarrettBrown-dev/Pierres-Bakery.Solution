@@ -4,18 +4,20 @@
 
 #### By _**Garrett Brown**_
 
+![alt text](https://image.shutterstock.com/image-photo/delicious-loaves-bread-german-baker-260nw-1544878508.jpg)
+
 ## Description
 
-A console application that displays options available at Pierre's Bakery, including bread, pastries and special deals! 
+A console application that displays options available at Pierre's Bakery, including bread, pastries and special deals! Now including Bagels!!! He admits his UI may be a little outdated, but he's super happy to have a brand new storefront!
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-|  1. Console displays "Welcome to Pierre's Bakery!" with options "bread" and "pastries" | dotnet run  | string |
+|  1. Console displays "Welcome to Pierre's Bakery!" with options "bread", "bagels" and "pastries" | dotnet run  | string |
 |  2. User should be able to input how many loaves of bread and pastries they would like.| Number | Pastries: 1 for $2, Bread: 5$ |
-|  3. User should get a deal for buying multiples of items. | 2 Bread | "We've got a two for one deal on bread! your order will only be 5$!" "We've got a discount for 3 pastries! 3 for $5! |
+|  3. User should get a deal for buying multiples of items. | 2 Bread | "We've got a two for one deal on bread! your order will only be 5$!", "We've got a discount for 3 pastries! 3 for $5!", "Our newest deal is 4 for $4 bagels!" |  |
 |  4. Application will return the total cost for the order.| 2 bread, 3 pastries | $10 |
-|  
+| 
 
 ## Setup/Installation Requirements
 
